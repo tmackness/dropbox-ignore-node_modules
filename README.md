@@ -17,7 +17,7 @@ Navigate to the working directory that contains your NodeJS project with the nod
 You may use the command `dropignore` or `di` for short.
 
 ```bash
-cd /Users/username/node/project
+cd ~/Dropbox/node/project
 di
 ```
 
