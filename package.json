@@ -1,12 +1,28 @@
 {
   "name": "dropbox-ignore-node_modules",
   "version": "1.0.0",
-  "description": "This package will tell Dropdox to ignore the node_modules directory inside your project.",
+  "description": "This package will tell Dropbox to ignore the node_modules directory inside your project.",
   "main": "index.js",
   "author": "Trent Mackness",
   "license": "ISC",
   "bin": {
     "dropignore": "./index.js",
     "di": "./index.js"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tmackness/dropbox-ignore-node_modules.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tmackness/dropbox-ignore-node_modules/issues"
+  },
+  "keywords": [
+    "dropbox",
+    "ignore",
+    "sync",
+    "node modules",
+    "node_modules",
+    "cli",
+    "nosync"
+  ]
 }
