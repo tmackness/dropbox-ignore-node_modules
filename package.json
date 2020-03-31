@@ -1,0 +1,12 @@
+{
+  "name": "dropbox-ignore-node_modules",
+  "version": "1.0.0",
+  "description": "This package will tell Dropdox to ignore the node_modules directory inside your project.",
+  "main": "index.js",
+  "author": "Trent Mackness",
+  "license": "ISC",
+  "bin": {
+    "dropignore": "./index.js",
+    "di": "./index.js"
+  }
+}
