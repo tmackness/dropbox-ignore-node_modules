@@ -1,6 +1,6 @@
 {
   "name": "dropbox-ignore-node_modules",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "This package will tell Dropbox to ignore the node_modules directory inside your project.",
   "main": "index.js",
   "author": "Trent Mackness",
