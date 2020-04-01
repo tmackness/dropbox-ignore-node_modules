@@ -19,7 +19,7 @@ const fs = require('fs');
       platform === "win32"
         ? `Set-Content -Path '${modulesPath}' -Stream com.dropbox.ignored -Value 1`
         : platform === "darwin"
-          ? `xattr -w com.dropbox.ignored 1 ${modulesPath}`
+          ? `xattr -w com.dropbox.ignored 1 ${modulesPath.replace(" ", "\\ ")}`
           : `attr -s com.dropbox.ignored -V 1 ${modulesPath}`
     );
 
