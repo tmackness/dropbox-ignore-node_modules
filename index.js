@@ -17,7 +17,7 @@ const fs = require('fs');
     const platform = process.platform;
     const command = (
       platform === "win32"
-        ? `Set-Content -Path '${modulesPath}' -Stream com.dropbox.ignored -Value 1`
+        ? `powershell "Set-Content -Path '${modulesPath}' -Stream com.dropbox.ignored -Value 1"`
         : platform === "darwin"
           ? `xattr -w com.dropbox.ignored 1 ${modulesPath.replace(" ", "\\ ")}`
           : `attr -s com.dropbox.ignored -V 1 ${modulesPath}`
