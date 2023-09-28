@@ -19,7 +19,7 @@ try {
 			case 'win32':
 				return `powershell "Set-Content -Path '${modulesPath}' -Stream com.dropbox.ignored -Value 1"`
 			case 'darwin':
-				return `xattr -w com.dropbox.ignored 1 ${modulesPath.replace(' ', '\\ ')}`
+				return `xattr -w com.dropbox.ignored 1 ${modulesPath.replace(/\s+/g, '\ ')}`
 			case 'linux':
 				return isWsl
 					? `powershell.exe -Command "Set-Content -Path '${modulesPath.replace(
