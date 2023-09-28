@@ -12,13 +12,12 @@ try {
 	if (!nodeModulesExist) {
 		throw new Error(`A node_modules directory does not exist in this location - ${cwd}`)
 	}
-
 	// shell command
 	const platform = process.platform
 	const command = () => {
 		switch (platform) {
 			case 'win32':
-				return `Set-Content -Path '${modulesPath}' -Stream com.dropbox.ignored -Value 1`
+				return `powershell "Set-Content -Path '${modulesPath}' -Stream com.dropbox.ignored -Value 1"`
 			case 'darwin':
 				return `xattr -w com.dropbox.ignored 1 ${modulesPath.replace(' ', '\\ ')}`
 			case 'linux':
