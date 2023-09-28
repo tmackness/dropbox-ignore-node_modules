@@ -24,5 +24,8 @@
     "node_modules",
     "cli",
     "nosync"
-  ]
+  ],
+  "dependencies": {
+    "is-wsl": "^2.2.0"
+  }
 }
